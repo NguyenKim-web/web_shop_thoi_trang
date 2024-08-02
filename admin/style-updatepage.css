@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ul, li{
+    list-style-type: none;
+}
+.admin-content{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+}
+<<<<<<< HEAD
+/* -----header---- */
+header h1{
+    text-align: center;
+    padding: 30px 0;
+    border: 1px solid black;
+    margin: 2px;
+}
+=======
+>>>>>>> c5c02735536a3512eaa4550905d14a384559512f
+/* left-content */
+.admin-content-left{
+    padding-left: 8px;
+    width: 25%;
+    background-color: rgb(228, 225, 225);
+}
+.admin-content-left > ul > li > a{
+    font-weight: 600;
+}
+.admin-content-left  ul  li {
+    padding: 6px 0;
+}.admin-content-left  ul  ul {
+    padding-left: 10px ;
+<<<<<<< HEAD
+}
+
+/* ------category list---------- */
+.admin-content-right{
+    width: 80%;
+}
+.category-list table{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    border-collapse: collapse;
+}.category-list table th, td{
+    border: 1px solid black;
+}
+
+/* ------------product css----------------- */
+input, select{
+    width: 200px;
+    height: 30px;
+    margin: 10px;
+=======
+>>>>>>> c5c02735536a3512eaa4550905d14a384559512f
+}

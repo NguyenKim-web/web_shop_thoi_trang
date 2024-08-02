@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Them dan sach san pham</title>
+    <link rel="stylesheet" href="style-updatepage.css">
+</head>
+<body>
+    <header>
+        <h1>TOP</h1>
+    </header>
+    <div class="admin-content">
+        <!-- left side -->
+        <div class="admin-content-left">
+            <ul>
+                <li><a href="">Danh Muc</a>
+                    <ul>
+                        <li><a href="">Them danh muc</a></li>
+                        <li><a href="">Danh sach danh muc</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Loai san pham</a>
+                    <ul>
+                        <li><a href="">Them loai san pham</a></li>
+                        <li><a href="">Danh sach loai san pham</a></li>
+                    </ul>
+                </li>
+                <li><a href="">San pham</a>
+                    <ul>
+                        <li><a href="">Them san pham</a></li>
+                        <li><a href="">Danh sach san pham</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+        <!-- right side -->
+        <div class="admin-content-right">
+            <div class="product-add">
+                <h2>Them san pham</h2>
+                <form action="" method="POST" enctype="multipart/form-data">
+                    <label for="">Nhap ten san pham <span style="color:red">*</span></label>
+                    <input required type="text" placeholder="Nhap ten san pham"> <br>
+                    <label for="">Chon danh muc <span style="color:red">*</span></label>
+                    <select name="" id="">
+                        <option value="#">--Select category</option>
+                    </select> <br>
+                    <label for="">Chon loai san pham <span style="color:red">*</span></label>
+                    <select name="" id="">
+                        <option value="#">--Select product</option>
+                    </select> <br>
+                    <label for="">Gia san pham <span style="color:red">*</span></label>
+                    <input required type="text" placeholder="Gia san pham"> <br>
+                    <label for="">Gia khuyen mai <span style="color:red">*</span></label>
+                    <input required type="text" placeholder="Gia khuyen mai"> <br>
+                    <label for="">Mo ta san pham <span style="color:red">*</span></label>
+                    <textarea name="" cols="30" rows="10" id="" placeholder="Mo ta san pham"></textarea> <br>
+                    <label for="">Anh san pham <span style="color:red">*</span></label>
+                    <input type="file" name="" id=""><br>
+                    <label for="">Anh mo ta (Co the chon nhieu file) <span style="color:red">*</span></label>
+                    <input multiple type="file" name="" id=""><br>
+                    <button type="submit">Them</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body> 
+</html>

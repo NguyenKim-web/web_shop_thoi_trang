@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- reset css -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- add css -->
+    <link rel="stylesheet" href="./css/order-style.css">
+    <title>Order</title>
+</head>
+<body >
+    <!-- header -->
+    <header class="header">
+        <div class="container">
+            <div class="body">
+                <div class="logo">
+                    <a href="#!"><img src="./images/logo.png" alt="logo" class="logo"></a>
+                </div>
+                <div class="menu">
+                    <ul class="menu-item">
+                        <li class="girl-itemgroup" ><a href="">NU</a>
+                            <ul class="girl-items">
+                                <li><a href="#!">Hang moi ve</a></li>
+                                <li><a href="#!">Tom & Jerry Colection</a></li>
+                                <li class="sub-menu"><a href="#!">AO</a></li>
+                                <li><a href="#!">Ao so mi</a></li>
+                                <li><a href="#!">Ao thun</a></li>
+                                <li><a href="#!">Ao vest</a></li>
+                                <li><a href="#!">Ao len</a></li>
+                                <li><a href="#!">Ao khoac</a></li>
+                                <li class="sub-menu"><a href="#!">QUAN</a></li>
+                                <li><a href="#!">Quan jeans</a></li>
+                                <li><a href="#!">Quan lung/short</a></li>
+                                <li><a href="#!">Quan dai</a></li>
+                                <li class="sub-menu"><a href="#!">DAM NU</a></li>
+                                <li><a href="#!">Dam thun</a></li>
+                                <li><a href="#!">Senora</a></li>
+                                <li><a href="#!">Jumpsuit</a></li>
+                                <li><a href="#!">Zuyt</a></li>
+                                <li><a href="#!">Khac</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">NAM</a></li>
+                        <li><a href="">TRE EM</a></li>
+                        <li><a href="">SALE</a></li>
+                        <li><a href="">KHAU TRANG-BO BAO HO</a></li>
+                        <li><a href="">BO SUU TAP</a></li>
+                        <li><a href="">THONG TIN</a></li>
+                    </ul>
+                </div>
+                <div class="icons">
+                    <div class="search-box">
+                        <input type="text" placeholder="Tim kiem">
+                        <a href="#!">
+                           <img src="./icons/magnifying-glass-solid (2).svg" alt="search">
+                        </a> 
+                    </div>
+                    <div class="icon-item">
+                        <a href="#!">
+                            <img src="./icons/paw-solid.svg" alt="paw">
+                        </a>
+                        <a href="#!">
+                           <img src="./icons/user-solid (1).svg" alt="user">
+                        </a>
+                       <a href="#!">
+                           <img src="./icons/cart-shopping-solid.svg" alt="cart">
+                       </a>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+     </header>
+    <!-- order-->
+    <div class="order">
+        <div class="container">
+            <div class="order-body">
+                <!-- order top container -->
+                <div class="order-top-progress">
+                    <div class="progress"></div>
+                    <p class="active"><img src="./icons/cart-shopping-solid.svg" alt="cart" class="cart"></p>
+                    <p class="active"><img src="./icons/location-dot-solid.svg" alt="location" class="delivery"></p>
+                    <p><img src="./icons/credit-card-regular.svg" alt="credit-card" class="pay"></p>
+                </div>
+                <div class="order-content">
+                    <!-- left content -->
+                    <div class="order-detail-info">
+                            <h3 class="title">Vui long chon dia chi giao hang</h3>
+                            <a href="" class="login">
+                                <img src="./icons/login.svg" alt="login">
+                                <p>Dang nhap (Neu ban da co tai khoan cua IVY)</p>
+                            </a>
+                            <input class="just-buy" type="radio" name="select" value="just-buy">Khach le (Neu ban khong muon luu lai thong tin)</input> <br>
+                            <input class="register" type="radio" name="select" value="register">Dang ly (Tao moi tai khoan voi thong tin ben duoi)</input>
+                            <form action="" method="post">
+                               <table class="customer-address">
+                                <tr class="row row-1">
+                                    <td>Ho ten</td>
+                                    <td>Dien thoai</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" placeholder="Enter your name"></td>
+                                    <td><input type="tel" placeholder="Enter your phone number"></td>
+                                </tr>
+                                <tr class="row row-2">
+                                    <td>Tinh TP</td>
+                                    <td>Quan huyen</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" placeholder="Nhap vao ten tinh TP"></td>
+                                    <td><input type="text" placeholder="Nhap vao ten quan huyen"></td>
+                                </tr>
+                                <tr class="row row-4">
+                                    <td>Phuong xa</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2"><input type="text" placeholder="Nhap vao ten phuong xa"></td>
+                                </tr>
+                                <tr class="row row-4">
+                                    <td>Dia chi</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2"><input type="text" placeholder="Nhap vao ten pho, so nha..."></td>
+                                </tr>
+                               </table>
+                            </form>
+                            <div class="content-bottom">
+                                <a href=""><img src="./icons/back.svg" alt="back arrow">Quay lai gio hang</a>
+                                <button type="submit">THANH TOAN VA GIAO HANG</button>
+                            </div>
+                        </div>
+                    <!-- right content -->
+                    <div class="order-price">
+                        <div class="order-price-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="product-name">Ten san pham</th>
+                                        <th class="product-decount">Giam gia</th>
+                                        <th class="product-amount">So luong</th>
+                                        <th class="product-price">Thanh tien</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <span class="product-name-detail">Ao polo ke ngang MS 1092</span>  
+                                            <span class="product-size">M</span> / 
+                                            <span class="product-style">Ke bac ha</span>  
+                                            <span class="product-code">MS 1092</span>  
+                                            <span class="product-price vnd">690.000</span>  
+    
+                                        </td>
+                                        <td>-30%</td>
+                                        <td>1</td>
+                                        <td><span  class="vnd">438.000</span></td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td>Tong tien hang <span class="vnd">690.000</span></td>
+                                    </tr>  
+                                    <tr>
+                                        <td colspan="3">Tam tinh</td>
+                                        
+                                        <td><p class="vnd">483.000</p></td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+     <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="body">
+                <div class="title">Tai ung dung media</div>
+                <div class="icon-group">
+                    <a href="#!"><img src="./images/appstore.png" alt="apple-store"></a>
+                    <a href="#!"><img src="./images/googleplay.png" alt="google-play"></a>
+                </div>
+                <p class="desc1">Nhan ban tin moi</p>
+                <input type="email" alt="nhap email" placeholder="Enter your email">
+                <p class="desc2"></p>
+                <div class="contact">
+                    <ul>
+                        <li><a href=""><img src="./images/logo.png" alt="logo"></a></li>
+                        <li><a href="">Lien he</a></li>
+                        <li><a href="">Tuyen dung</a></li>
+                        <li><a href="">Gioi thieu</a></li>
+                       
+                        <li class="logo">
+                            <a href=""><img src="./icons/facebook-f-brands-solid.svg" alt="facebook"></a>
+                            <a href=""><img src="./icons/twitter-brands-solid.svg" alt="twitter"></a>
+                            <a href=""><img src="./icons/youtube-brands-solid.svg" alt="youtube"></a>
+                        </li>
+
+                    </ul>
+                </div>
+                <p>Cong ty co phan co so dang ky kinh doanh</p>
+                <p>Dia chi Lorem ipsum dolor sit Lorem ipsum dolor sit.</p>
+                <p>Dat hang online 090-8976-1234</p>
+                <div class="copyright">
+                    <p>Copy right</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./javascript/order.js"></script>
+</body>
+</html>

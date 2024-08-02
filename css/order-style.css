@@ -1,0 +1,331 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.icon{
+    width: 1.6rem;
+    color: #5b5959;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+/* -----------header----------- */
+header{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(251, 245, 251, 0.1);
+    /* position: fixed; */
+    top: 0;
+    position: sticky;
+    z-index: 1;  
+}
+.header .body:hover,
+.header .body.sticky{
+    background-color: rgba(251, 245, 251, 1);   
+}
+
+.header .body{
+    height: 50px;
+    display: grid;
+    grid-template-columns: 1fr 6fr 3fr;
+    place-items: center;
+    
+    
+}
+.header .menu-item{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+.header .logo{
+    margin: auto;
+    
+}
+.header .icons{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.header .icons input{
+   outline: none;
+   border-top: none;
+   border-left: none;
+   border-right: none;
+   background: transparent;
+}
+.header .icons img{
+   width: 12px;
+   height: 12px;
+   
+}
+.header .icon-item a{
+   padding: 0 8px;
+   border-left: 1px solid #b9b8b8;
+
+}
+
+.header .icon-item{
+   display: flex;
+   justify-content: space-between;
+   justify-content: center;
+   gap: 10px;
+}
+ul.menu-item li{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.icon-item .icon{
+    padding-left: 5px;
+    border-left: 1px solid #5b5959;
+}
+
+.girl-itemgroup{
+    position: relative;
+    
+}
+.girl-items{
+    top: 32px;
+    position: absolute;
+    width: 250px;
+    border: 1px solid #5b5959;
+    display: none;
+
+}
+
+.girl-items li{
+    padding: 8px 0 0 8px;
+
+}
+.girl-items .sub-menu{
+    font-weight: 600;
+
+}
+
+.search-box{
+    position: relative;
+    margin-right: 10px;
+}
+.search-box img{
+    position: absolute;
+    right: 5px;
+    object-fit: cover;
+    top: 3px;
+}
+/* --------order content------- */
+/* comment */
+.order-body{
+    padding: 60px 0;
+    border-bottom: 3px solid black;
+}
+.order-content{
+    display: flex;
+    justify-content: space-between;
+    
+}
+/* cart content ->top */
+.order-top-progress{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px auto 40px;
+    position: relative;
+}.order-top-progress .progress{
+    width: 50%;
+    height: 2px;
+    background-color: #3d7ad5;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.order-top-progress p{
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid #5b5959;
+    border-radius: 50%;
+    line-height: 30px;
+    text-align: center;
+    z-index: 1;
+}
+.order-top-progress::before{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #b0adad;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}.order-top-progress p.active{
+    border: 2px solid #92a1f4;
+    background-color: rgb(170, 221, 238);
+}
+
+.order-top-progress img{
+    height: 15px;
+}
+
+/* order content ->left content */
+.order-detail-info{
+    width: 60%;
+    padding: 10px;
+}.order-detail-info .title{
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.order-detail-info .login{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 20px;
+}.order-detail-info .login img{
+    height: 10px;
+}.order-detail-info .just-buy, .register{
+    margin-bottom: 20px;
+}
+.order-detail-info .just-buy, .register{
+    margin-bottom: 20px;
+}
+.order-detail-info .customer-address{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.order-detail-info .customer-address td{
+    padding-top: 6px;
+    margin-bottom: 20px;
+    padding-right: 20px;
+}.order-detail-info .customer-address .row td::after{
+    content: " *";
+    color: red;
+}
+.order-detail-info .customer-address td input{
+    width: 100%;
+    height: 20px;
+}
+.order-detail-info .content-bottom{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+}.order-detail-info .content-bottom img{
+    height: 10px;
+}.order-detail-info .content-bottom button{
+    height: 30px;
+    padding: 5px;
+    border: 2px solid black;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* order content ->right content */
+.order-price {
+    padding: 10px;
+    width: 40%;
+}.order-price-table {
+    padding: 10px;
+    border-left: 1px solid #aba8a8;
+} 
+
+.order-price table td{
+   padding: 10px 0;
+}
+.order-price table thead th{
+    padding: 10px;
+    font-weight: 600;
+    text-align: left;
+}
+.order-price table thead,
+.order-price table tbody {
+   border-bottom: 1px solid rgb(150, 148, 148);
+}
+.order-price table tbody td{
+    padding: 0 10px 20px;
+}.order-price table tbody td:not(:first-child),
+.order-price table tfoot p{
+    text-align: center;
+    vertical-align: middle;
+}
+.order-price table .product-name{
+   width: 40%
+}.order-price table span{
+   line-height: 2.2;
+}
+.vnd{
+    /* vertical-align: super; */
+    position: relative;
+}.vnd::after{
+    /* vertical-align: super; */
+    content: "vnd";
+    position: absolute;
+    top: -100%;
+}
+
+/*----------- footer----------- */
+footer .body{
+    display: grid;
+    grid-column: 1fr;
+    place-items: center;
+    padding: 100px 0 0;
+}
+footer .body .title{
+   font-size: 2.5rem;
+   font-weight: 600;
+   padding: 0 0 50px;
+}
+footer .body .desc1{
+   font-size: 2.5rem;
+   font-weight: 600;
+   padding: 50px 0 0;
+}
+footer .body .contact{
+   font-size: 2rem;
+   font-weight: 600;
+   padding: 50px 0 20px;
+}
+
+footer .body input{
+    width: 40%;
+    height: 30px;
+    border: none;
+    border-bottom: 2px solid #4c4a4a;
+}
+  footer .body input[type="email"]::placeholder {
+    text-align: center;
+}
+footer .body .contact ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .body .contact ul li{
+    padding: 0 10px;
+}footer .body .contact ul li:not(:first-of-type){
+    border-left: 1px solid #5b5959;
+}
+footer .body .contact ul li img{
+    padding: 0 10px;
+}
+footer .body .copyright{
+    padding: 20px 0 10px;
+}
+
+footer .title{
+    text-align: center;
+}
+footer .logo img{
+    height: 16px;
+}

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- reset css -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- add css -->
+    <link rel="stylesheet" href="./css/payment.css">
+    <title>Payment</title>
+</head>
+<body >
+    <!-- header -->
+    <header class="header">
+        <div class="container">
+            <div class="body">
+                <div class="logo">
+                    <a href="#!"><img src="./images/logo.png" alt="logo" class="logo"></a>
+                </div>
+                <div class="menu">
+                    <ul class="menu-item">
+                        <li class="girl-itemgroup" ><a href="">NU</a>
+                            <ul class="girl-items">
+                                <li><a href="#!">Hang moi ve</a></li>
+                                <li><a href="#!">Tom & Jerry Colection</a></li>
+                                <li class="sub-menu"><a href="#!">AO</a></li>
+                                <li><a href="#!">Ao so mi</a></li>
+                                <li><a href="#!">Ao thun</a></li>
+                                <li><a href="#!">Ao vest</a></li>
+                                <li><a href="#!">Ao len</a></li>
+                                <li><a href="#!">Ao khoac</a></li>
+                                <li class="sub-menu"><a href="#!">QUAN</a></li>
+                                <li><a href="#!">Quan jeans</a></li>
+                                <li><a href="#!">Quan lung/short</a></li>
+                                <li><a href="#!">Quan dai</a></li>
+                                <li class="sub-menu"><a href="#!">DAM NU</a></li>
+                                <li><a href="#!">Dam thun</a></li>
+                                <li><a href="#!">Senora</a></li>
+                                <li><a href="#!">Jumpsuit</a></li>
+                                <li><a href="#!">Zuyt</a></li>
+                                <li><a href="#!">Khac</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">NAM</a></li>
+                        <li><a href="">TRE EM</a></li>
+                        <li><a href="">SALE</a></li>
+                        <li><a href="">KHAU TRANG-BO BAO HO</a></li>
+                        <li><a href="">BO SUU TAP</a></li>
+                        <li><a href="">THONG TIN</a></li>
+                    </ul>
+                </div>
+                <div class="icons">
+                    <div class="search-box">
+                        <input type="text" placeholder="Tim kiem">
+                        <a href="#!">
+                           <img src="./icons/magnifying-glass-solid (2).svg" alt="search">
+                        </a> 
+                    </div>
+                    <div class="icon-item">
+                        <a href="#!">
+                            <img src="./icons/paw-solid.svg" alt="paw">
+                        </a>
+                        <a href="#!">
+                           <img src="./icons/user-solid (1).svg" alt="user">
+                        </a>
+                       <a href="#!">
+                           <img src="./icons/cart-shopping-solid.svg" alt="cart">
+                       </a>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+     </header>
+    <!-- payment-->
+    <div class="payment">
+        <div class="container">
+            <div class="payment-body">
+                <!-- payment top container -->
+                <div class="payment-top-progress">
+                    <div class="progress"></div>
+                    <p class="active"><img src="./icons/cart-shopping-solid.svg" alt="cart" class="cart"></p>
+                    <p class="active"><img src="./icons/location-dot-solid.svg" alt="location" class="delivery"></p>
+                    <p class="active"><img src="./icons/credit-card-regular.svg" alt="credit-card" class="pay"></p>
+                </div>
+                <div class="payment-content">
+                    <!-- left content: payment method-->
+                    <div class="payment-detail-info">
+                        <form action="" method="post">
+                            <h3 class="title1">Phuong thuc giao hang</h3>
+                            <input class="just-buy" type="radio" name="select" value="just-buy">Giao hang chuyen phat nhanh</input> <br>
+                            <p class="desc1">Chuyen hang toi dia chi khach hang</p>
+                            <h3 class="title1">Phuong thuc thanh toan</h3>
+                            <p class="desc2">Moi gia dich deu duoc bao mat va ma hoa. Thong tin the tin dung se khong bao gio duoc luu lai</p>
+                            <input class="just-buy" type="radio" name="select" value="just-buy">Thanh toan bang the tin dung(OnePay)</input> <br>
+                            <img src="./icons/visa_card_icon.png" alt="visa">
+                            <img src="./icons/mastercard_payment_icon.png" alt="mastercard"> <br>
+                            <input class="register" type="radio" name="select" value="register">Thanh toan bang the ATM(OnePay)</input>
+                            <div class="img-group">
+                                <section class="sub-img">
+                                    <img class="bank_icon" src="./icons/Icon_Vietcombank.png" alt="Vietcombank">
+                                    <img class="bank_icon" src="./icons/Icon_VietinBank.png" alt="vietinbank">
+                                    <img class="bank_icon" src="./icons/teckcombank_icon.png" alt="teckcomabnk">
+                                    <img class="bank_icon" src="./icons/logo-fpt.jpg" alt="fpt">
+                                    <img class="bank_icon" src="./icons/logo-vib.jpg" alt="vib">
+                                    <img class="bank_icon" src="./icons/logo_HDbank.png" alt="hdbank">
+                                    <img class="bank_icon" src="./icons/logo-mbbank-moi.png" alt="mbbank">
+                                </section>
+                                <p>Ho tro thanh toan online hon 38 ngan hang pho bien Viet Nam</p> <br>
+                            </div>
+                            <input class="register" type="radio" name="select" value="register">Thanh toan Momo</input><br>
+                            <img class="bank_icon" src="./icons/momo_pay.png" alt="momopay"><br>
+                            <input class="register" type="radio" name="select" value="register">Thu tien tan noi</input>
+                        </form>
+                    </div>
+                    <!-- right content -->
+                    <div class="payment-price">
+                        <div class="discount-payment">
+                            <table>
+                                <tbody>
+                                    <tr class="discount-voucher">
+                                        <td><input type="text" placeholder="Ma giam gia/qua tang"></td>
+                                        <td>
+                                            <button type="button"><svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 0 448 512">
+                                                <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                                <path fill="currentColor" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr class="collaborator">
+                                        <td><input type="text" placeholder="Ma cong tac vien"></td>
+                                        <td>
+                                            <button type="button"><svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 0 448 512">
+                                                <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                                <path fill="currentColor" d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></svg>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" class="select-employee-type" >
+                                            <select name="" id="select-table">
+                                                <option value="">Chon ma nhan vien than thiet</option>
+                                                <option value="">Nhan vien loai 1</option>
+                                                <option value="">Nhan vien loai 2</option>
+                                                <option value="">Nhan vien loai 3</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            
+                        </div>
+                        <div class="payment-price-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="product-name">Ten san pham</th>
+                                        <th class="product-decount">Giam gia</th>
+                                        <th class="product-amount">SL</th>
+                                        <th class="product-price">Thanh tien</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <p class="product-name-detail">Ao polo ke ngang MS 1092</p>  
+                                            <span class="product-size">M</sp> / 
+                                                <span class="product-style">Ke bac ha</span>  <br>
+                                                <span class="product-code">MS 1092</span>  
+                                                <span class="product-price vnd">690.000</span>  
+                                                
+                                            </td>
+                                            <td>0%</td>
+                                            <td>1</td>
+                                            <td><span  class="price1">438.000<span class="vnd1">vnd</span></span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="td-5" colspan="3">Tong tien hang(<span class="price1">749.000<span class="vnd1">vnd</span></span>)</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="3">Tam tinh</td>
+                                            
+                                            <td><span class="price1">483.000<span class="vnd1">vnd</span></span></td>
+                                        </tr> 
+                                        <tr>
+                                            <td colspan="3">Giao hang chuyen phat nhanh-Chuyen phat nhanh</td>
+                                            
+                                            <td><span class="price1">39.000<span class="vnd1">vnd</span></span></td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td colspan="3">Tien thanh toan </td>
+                                            <td><span class="price1">690.000<span class="vnd1">vnd</span></span></td>
+                                        </tr>  
+                                        
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-bottom">
+                        <div class="back-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path fill="currentColor" d="M459.5 440.6c9.5 7.9 22.8 9.7 34.1 4.4s18.4-16.6 18.4-29l0-320c0-12.4-7.2-23.7-18.4-29s-24.5-3.6-34.1 4.4L288 214.3l0 41.7 0 41.7L459.5 440.6zM256 352l0-96 0-128 0-32c0-12.4-7.2-23.7-18.4-29s-24.5-3.6-34.1 4.4l-192 160C4.2 237.5 0 246.5 0 256s4.2 18.5 11.5 24.6l192 160c9.5 7.9 22.8 9.7 34.1 4.4s18.4-16.6 18.4-29l0-64z"/></svg>
+                            <a>Quay lai</a>
+                        </div>
+                        <button type="submit">HOAN THANH</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+   
+     <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="body">
+                <div class="title">Tai ung dung media</div>
+                <div class="icon-group">
+                    <a href="#!"><img src="./images/appstore.png" alt="apple-store"></a>
+                    <a href="#!"><img src="./images/googleplay.png" alt="google-play"></a>
+                </div>
+                <p class="desc1">Nhan ban tin moi</p>
+                <input type="email" alt="nhap email" placeholder="Enter your email">
+                <p class="desc2"></p>
+                <div class="contact">
+                    <ul>
+                        <li><a href=""><img src="./images/logo.png" alt="logo"></a></li>
+                        <li><a href="">Lien he</a></li>
+                        <li><a href="">Tuyen dung</a></li>
+                        <li><a href="">Gioi thieu</a></li>
+                       
+                        <li class="logo">
+                            <a href=""><img src="./icons/facebook-f-brands-solid.svg" alt="facebook"></a>
+                            <a href=""><img src="./icons/twitter-brands-solid.svg" alt="twitter"></a>
+                            <a href=""><img src="./icons/youtube-brands-solid.svg" alt="youtube"></a>
+                        </li>
+
+                    </ul>
+                </div>
+                <p>Cong ty co phan co so dang ky kinh doanh</p>
+                <p>Dia chi Lorem ipsum dolor sit Lorem ipsum dolor sit.</p>
+                <p>Dat hang online 090-8976-1234</p>
+                <div class="copyright">
+                    <p>Copy right</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./javascript/payment.js"></script>
+</body>
+</html>
