@@ -319,6 +319,15 @@ ul.menu-item li{
     cursor: pointer;
 }
 
+.change-page .page-first, .page-prev{
+    display: none;
+
+}.change-page .page-number1{
+    font-weight: 700;
+
+}
+
+
 /*----------- footer----------- */
 footer .body{
     display: grid;

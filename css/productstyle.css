@@ -31,7 +31,7 @@ header{
     /* position: fixed; */
     top: 0;
     position: sticky;
-    z-index: 1;  
+    z-index: 2;  
 }
 .header .body:hover,
 .header .body.sticky{
@@ -306,24 +306,40 @@ ul.menu-item li{
     padding: 0 0 10px;
     color: #000;
 
-}.decs-title .active{
-    border-bottom: 2px solid rgb(23, 23, 23); 
 }
-.desc-container p,td{
+{
+    //delete later
+}
+.description .desc-top span{
+    cursor: pointer;
+
+}
+
+.hide{
+    display: none;
+}.hide1{
+    display: none;
+}
+
+.decs-title .active{
+    border-bottom: 2px solid rgb(23, 23, 23); 
+    color: black ;
+}
+.desc-content p,td{
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 1.5;
 }
-.desc-container table{
+.desc-content table{
     margin: 20px 0;
     width: 70%;
 }
-.desc-container table td{
+.desc-content table td{
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 1.5;
 }
-.desc-container table td:first-of-type{
+.desc-content table td:first-of-type{
     font-size: 1.8rem;
     font-weight: 700;
    
@@ -331,6 +347,44 @@ ul.menu-item li{
 .description,
 .product-bottom{
     padding-bottom: 60px;
+}
+
+.desc-content3{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(251, 245, 251, 0.7);
+    border: 1px solid black;
+    /* position: absolute; */
+    /* position: relative; */
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 2;
+    margin: 0 auto;
+    /* display: none; */
+    
+}.desc-content3.hide1{
+
+    display: none;
+    
+}
+.desc-content3 div{
+    width: 50%;
+    height: 90vh;
+    background-color: #cf1414;
+    overflow: hidden;
+    margin: auto;
+}.desc-content3 div img{
+    width: 100%;
+    height: 100%;
+   object-fit: cover;
+}.desc-content3 p{
+    width: 40px;
+    height: 40px;
+   text-align: center;
+   cursor: pointer;
+   font-size: 2.2rem;
 }
 
 /*----------- footer----------- */
