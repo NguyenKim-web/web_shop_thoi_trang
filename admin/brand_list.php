@@ -25,9 +25,7 @@ include 'class/brand_class.php';
         $i=0;
         while($result = $show_brand->fetch_assoc()){
             $i++;
-        }
-     }
-
+     
             ?>
             <tr>
                 <td><?php echo $i?></td>
@@ -37,6 +35,11 @@ include 'class/brand_class.php';
                 <td><a href="brand_edit.php?brand_id =<?php echo $result['brand_id']?>">Sua</a> | <a
                         href="brand_del.php?brand_id =<?php echo $result['brand_id']?>">Xoa</a></td>
             </tr>
+            <?php
+                   }
+                }
+           
+            ?>
         </table>
     </div>
 </div>

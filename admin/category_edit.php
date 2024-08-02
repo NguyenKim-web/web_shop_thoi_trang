@@ -5,7 +5,7 @@ include 'class/category_class.php';
 ?>
 <!-- lay va show du lieu ra trang web -->
 <?php
-    $catalogy = new Category;
+    $category = new Category;
     if (!isset($_POST['category_id']) || $_POST['category_id']==null) {
         //Sai chua sua
         //Using JS:

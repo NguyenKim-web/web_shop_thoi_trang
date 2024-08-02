@@ -16,7 +16,7 @@ include 'class/brand_class.php';
     //     echo "<script>window.location = 'category_list.php'</script>";
     // }else{
     //get du lieu   
-        $brand_id = $_GET["brand_id"]; // or $_PORT["category_id"]
+    $brand_id = $_GET['brand_id']; // or $_PORT["brand_id"]
     // }
     $get_brand = $brand->get_brand($brand_id);
     if($get_brand){
@@ -54,7 +54,6 @@ select {
                 <?php
                     }}
                 ?>
-                <option value="">Nu</option>
             </select> <br>
             <input required type="text" name="brand_name" placeholder="Nhap ten loai san pham"
                 value="<?php echo $resultA['brand_name'] ?>">

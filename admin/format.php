@@ -9,11 +9,7 @@ class Format{
         $text = $text. " ";
         $text = substr($text, 0, $limit);
         $text = substr($text, 0, strrpos($text, ' ')); 
-<<<<<<< HEAD
         $text= $text.".....";
-=======
-        $text= $text."......";
->>>>>>> c5c02735536a3512eaa4550905d14a384559512f
         return $text;
     }
     public function validation($data) {

@@ -20,21 +20,22 @@ include 'class/category_class.php';
                 <th>Tuy bien</th>
             </tr>
             <?php
-    if ($show_category) {  
-        $i=0;
-        while($result = $show_category->fetch_assoc()){
-            $i++;
-        }
-     }
+            if ($show_category) {  
+                $i=0;
+                while($result = $show_category->fetch_assoc()){
+                    $i++;
+                    ?>
 
-            ?>
             <tr>
-                <td><?php echo $i?></td>
-                <td><?php echo $result['category_id']?></td>
+                <td><?php echo $i ?></td>
+                <td><?php echo $result['category_id'] ?></td>
                 <td><?php echo $result['category_name']?></td>
                 <td><a href="category_edit.php?category_id =<?php echo $result['category_id']?>">Sua</a> | <a
                         href="category_del.php?category_id =<?php echo $result['category_id']?>">Xoa</a></td>
             </tr>
+            <?php
+            }}
+            ?>
         </table>
     </div>
 </div>

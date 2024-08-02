@@ -11,7 +11,7 @@
             // echo '</pre>';
         }
         public function insert_brand($category_id, $brand_name){
-            $query = "INSERT INTO tbl_brand (category_id, brand_name) VALUES ('$category_id', '$brand_name)')";
+            $query = "INSERT INTO tbl_brand (category_id, brand_name) VALUES ('$category_id', '$brand_name')";
             $result = $this->db->insert($query);
             header('location: brand_list.php');
             return $result;   

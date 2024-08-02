@@ -29,7 +29,7 @@
         }public function update_category($category_name, $category_id){
             $query = "UPDATE tbl_category SET category_name = '$category_name' WHERE category_id = '$category_id'";
             $result = $this->db->update($query);
-            header('location: category_list.php');
+            header('location: category_edit.php');
             return $result;
         }
         public function del_category($category_id){
